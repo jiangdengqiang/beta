@@ -1,0 +1,27 @@
+{
+  "name": "beta",
+  "version": "1.0.0",
+  "description": "beta是一个教育考试相关的后台开发系统",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-ruby-sass": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangdengqiang/beta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiangdengqiang/beta/issues"
+  },
+  "homepage": "https://github.com/jiangdengqiang/beta#readme"
+}
