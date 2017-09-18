@@ -1,0 +1,43 @@
+/*
+@mixin bgLinear($Yvalue,$Scolor,$Ecolor) {background-image:-webkit-linear-gradient($Yvalue, $Scolor, $Ecolor); background-image:-moz-linear-gradient($Yvalue,$Scolor, $Ecolor); background-image:-o-linear-gradient($Yvalue,$Scolor, $Ecolor);background-image:-ms-linear-gradient($Yvalue,$Scolor, $Ecolor); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$Scolor', endColorstr='$Ecolor'); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$Scolor', endColorstr='$Ecolor')"; }
+*/
+/*
+$icon: sprite-map("icon!*.png",$spacing: 4px,$layout:smart);
+$icons-2x: sprite-map("icons-2x!*.png",$spacing: 4px, $layout:smart);
+@mixin fnIconSprite($name){ width: image-width(sprite-file($icon, $name)); height: image-height(sprite-file($icon, $name)); background-image: sprite-url($icon); background-position: sprite-position($icon, $name); background-repeat: no-repeat; @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2; }
+};*/
+body { font-family: "Microsoft Yahei",Arial,Helvetica, sans-serif; font-size: 100%; }
+
+img { height: auto; max-width: 100%; vertical-align: middle; border: 0; -ms-interpolation-mode: bicubic; }
+
+header { height: 50px; background-color: #56c0ed; border: 1px solid #4da1ff; border-bottom: 0; padding: 6px 30px 0; }
+
+header:after, .logo:after { content: ""; clear: both; display: block; height: 0; }
+
+a { color: #333; }
+
+a:hover { text-decoration: none; }
+
+.logo { display: block; float: left; padding-bottom: 2px; }
+
+.logo img { float: left; }
+
+.logo_dec { float: left; margin-left: 10px; }
+
+.logo_dec > span { display: block; }
+
+.logo_dec .logo_title { font-size: 14px; color: #00174b; }
+
+.logo_dec .logo_en { font-size: 12px; color: #00174b; }
+
+.top_nav { float: left; }
+
+.vip_info { float: right; }
+
+.vip_info > span { margin-right: 17px; }
+
+.top_nav a { display: block; float: left; padding: 12px 42px; color: #2ba9df; font-size: 16px; border-top-left-radius: 4px; border-top-right-radius: 4px; margin-right: 2px; background-color: #92d8f6; }
+
+.top_nav a.active { background-color: #f6f6f7; color: #00174b; }
+
+/*# sourceMappingURL=global.css.map */
