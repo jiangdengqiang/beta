@@ -9,35 +9,167 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
 <meta name="keywords" content=""/>
 <meta name="description" content=""/>
-<link rel="Shortcut Icon" type="image/x-icon" href="#">
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-select.min.css"/>
 <link rel="stylesheet" href="../css/global.css"/>
     <title>打标 & 推题</title>
 </head>
 <body>
     <!--顶部-->
     <header>
-        <a href="#" class="logo">
-            <img src="../images/logo.png" title="原石教育"/>
-            <div class="logo_dec">
-                <span class="logo_title">原石教育</span>
-                <span class="logo_en">RAWSTONE-EDU</span>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="../images/logo.png" title="原石教育"/>
+                <div class="logo_dec">
+                    <span class="logo_title">原石教育</span>
+                    <span class="logo_en">RAWSTONE-EDU</span>
+                </div>
+            </a>
+            <nav class="top_nav">
+                <a href="javascript:;" class="active">资源库管理</a>
+                <a href="javascript:;">校本库管理</a>
+                <a href="javascript:;">用户权限管理</a>
+                <a href="javascript:;">系统设置</a>
+            </nav>
+            <div class="vip_info">
+                <div class="module-vip">
+                    <span class="vip_level">学科管理员</span>
+                    <span class="vip-man">赵老师</span>
+                </div>
+                <a href="#"><img src="../images/man.png"/></a>
             </div>
-        </a>
-        <nav class="top_nav">
-            <a href="javascript:;" class="active">资源库管理</a>
-            <a href="javascript:;">校本库管理</a>
-            <a href="javascript:;">用户权限管理</a>
-            <a href="javascript:;">系统设置</a>
-        </nav>
-        <div class="vip_info">
-            <span>王思聪</span>
-            <a href="#"><img src="../images/head_man.png"/></a>
         </div>
     </header>
     <!--主体-->
-    <section>
-        <div class="main-left"></div>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4 main-left">
+                <div class="row">
+                    <div class="form-select col-md-3">
+                        <select class="selectpicker">
+                            <option>数学</option>
+                            <option>英语</option>
+                        </select>
+                    </div>
+                    <div class="form-select col-md-9">
+                        <select class="selectpicker">
+                            <option>必修1 (1212/1212/1231)</option>
+                            <option>必修2 (1232/1233/1234)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="module-accordion">
+                    <div class="module-list">
+                        <div class="module-list-one">
+                            <i class="icon-folder"></i>
+                            <span class="accordion-dec">第一章 集合与函数概念 (I)</span>
+                            <span>(<span class="chapter">365</span>/<span class="chapter_ok">365</span>/<span class="chapter_all">365</span>)</span>
+                            <i class="icon-arrow-up"></i>
+                        </div>
+                        <ul class="module-list-two">
+                            <li>
+                                <i class="icon-file"></i>
+                                <span class="accordion-two-dec">2.1指数函数</span>
+                                <span>(<span class="chapter-two">26</span>/<span class="chapter-two-ok">26</span><span class="chapter-two-all">26</span>)</span>
+                            </li>
+                            <li>
+                                <i class="icon-file"></i>
+                                <span class="accordion-two-dec">2.2对数函数</span>
+                                <span>(<span class="chapter-two">26</span>/<span class="chapter-two-ok">26</span><span class="chapter-two-all">26</span>)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="module-list">
+                        <div class="module-list-one">
+                            <i class="icon-folder"></i>
+                            <span class="accordion-dec">第一章 集合与函数概念 (I)</span>
+                            <span>(<span class="chapter">365</span>/<span class="chapter_ok">365</span>/<span class="chapter_all">365</span>)</span>
+                            <i class="icon-arrow-up"></i>
+                        </div>
+                        <ul class="module-list-two">
+                            <li>
+                                <i class="icon-file"></i>
+                                <span class="accordion-two-dec">2.1指数函数</span>
+                                <span>(<span class="chapter-two">26</span>/<span class="chapter-two-ok">26</span><span class="chapter-two-all">26</span>)</span>
+                            </li>
+                            <li>
+                                <i class="icon-file"></i>
+                                <span class="accordion-two-dec">2.2对数函数</span>
+                                <span>(<span class="chapter-two">26</span>/<span class="chapter-two-ok">26</span><span class="chapter-two-all">26</span>)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="module-list">
+                        <div class="module-list-one">
+                            <i class="icon-folder"></i>
+                            <span class="accordion-dec">第一章 集合与函数概念 (I)</span>
+                            <span>(<span class="chapter">365</span>/<span class="chapter_ok">365</span>/<span class="chapter_all">365</span>)</span>
+                            <i class="icon-arrow-up"></i>
+                        </div>
+                        <ul class="module-list-two">
+                           <li>
+                               <i class="icon-file"></i>
+                               <span class="accordion-two-dec">2.1指数函数</span>
+                               <span>(<span class="chapter-two">26</span>/<span class="chapter-two-ok">26</span><span class="chapter-two-all">26</span>)</span>
+                           </li>
+                            <li>
+                                <i class="icon-file"></i>
+                                <span class="accordion-two-dec">2.2对数函数</span>
+                                <span>(<span class="chapter-two">26</span>/<span class="chapter-two-ok">26</span><span class="chapter-two-all">26</span>)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 main-right">
+                <div class="module-marking">
+                    <ul class="marking-list">
+                        <li><a href="javascript:;">题目录入</a></li>
+                        <li><a href="javascript:;">批量审核</a></li>
+                        <li><a href="javascript:;">批量移动</a></li>
+                    </ul>
+                    <a href="javascript:;"><i class="icon-check"></i>显示打标及审核过的题目</a>
+                </div>
+                <div class="module-marking-filter">
+                    <div class="row">
+                        <ul class="marking-type col-md-3">
+                            <li><a href="javascript:;">选择<span class="marking-num">14</span></a></li>
+                            <li><a href="javascript:;">填空<span class="marking-num">6</span></a></li>
+                            <li><a href="javascript:;">解答<span class="marking-num">6</span></a></li>
+                        </ul>
+                        <ul class="marking-style col-md-5">
+                            <li><a href="javascript:;">容易<span class="marking-num">14</span></a></li>
+                            <li><a href="javascript:;">中等<span class="marking-num">6</span></a></li>
+                            <li><a href="javascript:;">困难<span class="marking-num">6</span></a></li>
+                            <li><a href="javascript:;">未知<span class="marking-num">6</span></a></li>
+                        </ul>
+                        <ul class="marking-level col-md-4">
+                            <li><a href="javascript:;">同步训练<span class="marking-num">14</span></a></li>
+                            <li><a href="javascript:;">复习模拟<span class="marking-num">6</span></a></li>
+                            <li><a href="javascript:;">高考真题<span class="marking-num">6</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="module-theme">
+                    <div class="theme-list">
+                        <ul class="theme-tip">
+                            <li><span>1</span></li>
+                            <li><a href="javascript:;">编辑</a></li>
+                            <li><a href="javascript:;">浏览</a></li>
+                            <li><a href="javascript:;">删除</a></li>
+                        </ul>
+                        <ul class="theme-status">
+                            <li><i></i><span>未审核</span></li>
+                            <li><i></i><span>未打标</span></li>
+                            <li><a href="#">打标</a></li>
+                        </ul>
+                        <p class="theme-content">
+                           <span>这是个题目的字体样式</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="main-right"></div>
     </section>
     <!--分页-->
@@ -47,4 +179,7 @@
 </body>
 <!-- javascript -->
 <script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/bootstrap-select.js"></script>
+<script type="text/javascript" src="../js/global.js"></script>
 </html>

@@ -2,35 +2,15 @@ $sideL:left;
 $sideR:right;
 $fontSize:100%;
 $mainColor:#00174b;
-$fontColor:#333;
 $whiteColor:#fff;
-$grayColor:#eee;
 $grayfColor:#f6f6f7;
-$blackColor:#404042;
-$yellowColor:#ff7d00;
-$greenColor:#37ac03;
-$blueColor:#315fac;
-$lblueColor:#8fa6cc;
-$tblueColor:#6bacdd;
-$blueBoder:#4c7dcf;
-$easyColor:#b1b1b1;
-$errorColor:#ff4900;
-$orangelinkColor:#ff7d00;
-$orangeColor:#ff4900;
-$disabledColor:#ffbe7f;
-$lineHeight:1.5em;
-$fontWeight: 300;
-$box-spacing: 20px;
-$subHeadMargin:30px;
+$borderColor:#CCD3DE;
 
-
-@mixin inlineBlock {
-  display: inline-block;
-  vertical-align: middle;
+@mixin mainModule {
+  border: $borderColor solid 1px;
+  padding:15px;
+  border-radius:5px;
 }
-@mixin borderBottom { border-bottom: $easyColor dotted 2px;}
-@mixin borderTop { border-top: $easyColor dotted 2px;}
-@mixin borderblue { border:$blueBoder dotted 2px;}
 
 @mixin hundRed { width: 100%; height: auto;}
 @mixin yellowBtn {

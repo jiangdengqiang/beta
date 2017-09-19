@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAuDA;;EAEE",
+"mappings": "AAmCA;;EAEE",
 "sources": ["../sass/variables.scss"],
 "names": [],
 "file": "variables.css"
