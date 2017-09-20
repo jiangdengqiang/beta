@@ -20,9 +20,11 @@ body {
   font-family: "Microsoft Yahei",Arial,Helvetica, sans-serif;
   font-size: 100%;
   min-width: 1400px;
+  background-color: $grayfColor;
 }
-ul,li { list-style-type: none;}
+ul,li { list-style-type: none; padding:0; margin: 0;}
 a:focus{ outline: 0;}
+p { margin: 0; padding:0;}
 img {
   height: auto;
   max-width: 100%;
@@ -36,14 +38,14 @@ header {
   margin-bottom: 20px;
 }
 input, button { outline: 0; }
-header:after,.logo:after,.clear:after{
+header:after,.logo:after,.clear:after,.marking-list:after,.module-marking:after,.marking-type:after,.marking-style:after,.marking-level:after,.module-marking-filter:after,.theme-list:after,.page:after{
   content:"";
   clear:both;
   display: block;
   height:0;
 }
 a { color: #333;}
-a:hover {
+a:hover, a:focus{
   text-decoration: none;
 }
 .row{
@@ -136,9 +138,10 @@ a:hover {
 .main-left {
   @include mainModule;
   min-height: 808px;
+  background-color: $whiteColor;
 }
 .main-right {
-  width:950px;
+
 }
 .form-select {
   padding:0 10px;
@@ -252,6 +255,9 @@ i{
 .module-accordion .module-list.open .icon-folder{
   @include fnIconSprite(folder-active);
 }
+.module-marking .marking-list {
+
+}
 .bootstrap-select.btn-group .dropdown-toggle .caret {
   right: 15px;
   margin-top: -5px;
@@ -259,6 +265,279 @@ i{
 .form-select .btn.btn-default{
   outline: 0!important;
   box-shadow: none;
+}
+.main-right {
+  background-color: $whiteColor;
+  @include mainModule;
+  min-height: 808px;
+  position: relative;
+}
+.marking-list {
+  float: $sideL;
+}
+.module-marking {
+  margin-bottom: 15px;
+}
+.module-marking .marking-list li {
+  float: $sideL;
+  padding: 6px 35px;
+  margin-right: 30px;
+  background-color: #2AA7DC;
+  border: 1px solid #4DA1FF;
+  border-radius: 5px;
+}
+.module-marking .marking-list li > a {
+  display: block;
+  color:$whiteColor;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.module-marking .marking-check {
+  float: $sideL;
+  margin-left: 16px;
+  margin-top: 15px;
+  color:#636363;
+  font-size: 12px;
+}
+.icon-check {
+  @include fnIconSprite(check);
+  vertical-align: text-bottom;
+  margin-right: 3px;
+}
+.module-marking-filter {
+  border: $borderColor solid 1px;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+.module-theme .theme-list{
+  cursor: pointer;
+}
+.module-theme .theme-list:hover {
+  border: 1px solid #4DA1FF;
+  box-shadow: 0px 0px 10px #2AA7DC;
+  border-radius: 5px;
+}
+.module-theme .theme-list {
+  border: 1px solid #CCD3DE;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.module-theme .theme-list .theme-tip {
+  float: $sideL;
+}
+.module-theme .theme-list .theme-status {
+  float: $sideR;
+}
+.module-theme .theme-list .theme-tip li {
+  float: $sideL;
+  width:60px;
+  height:24px;
+  line-height: 24px;
+  text-align: center;
+}
+.theme-list .theme-tip .theme-num {
+  background-color: $backGroundColor;
+  border-right: 1px solid #4DA1FF;
+  border-bottom: 1px solid #4DA1FF;
+  display: block;
+  color: $whiteColor;
+  border-top-left-radius: 5px;
+}
+.theme-list .theme-tip a{
+  font-size: 12px;
+  color:#636363;
+  border-right:1px solid $borderColor;
+  border-bottom:1px solid $borderColor;
+  display: block;
+}
+.theme-list .theme-tip a:hover{
+  border-right:1px solid #4DA1FF;
+  border-bottom:1px solid #4DA1FF;
+  border-left: 1px solid #4DA1FF;
+  background-color: #E0EEFD;
+  color:#63A6F7;
+}
+.theme-status li > i {
+  display: inline-block;
+  width: 10px;
+  height:10px;
+  border-radius:100%;
+  background-color: #E85454;
+  margin-right: 4px;
+}
+.theme-status li >span {
+  display: inline-block;
+  color: #4A4A4A;
+}
+.theme-status a {
+  display: block;
+  color: #636363;
+  width: 60px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-top-right-radius:5px;
+  font-size: 12px;
+  border-left:1px solid $borderColor;
+  border-bottom:1px solid $borderColor;
+}
+.theme-status a.ok {
+  background-color: #E85454;
+  border-left:1px solid #E85454;
+  border-bottom:1px solid #E85454;
+  color: $whiteColor;
+}
+.theme-list  .theme-status li{
+  float: $sideL;
+  line-height: 22px;
+  margin-left: 15px;
+}
+.main-right .page {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  border-top:1px solid $borderColor;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #4A4A4A;
+}
+.page .result {
+  float: $sideL;
+  margin-top: 10px;
+}
+.page .result span{
+  margin-left:10px;
+}
+.page .showNum {
+  float: $sideL;
+  margin-left: 50px;
+}
+.page .showNum > span {
+  float: $sideL;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.page .showNum .show-input {
+  float: $sideL;
+  margin-right: 6px;
+  position: relative;
+}
+.page .showNum .show-input .page-icon {
+  position: absolute;
+  right:0;
+  top:0;
+  border-left:1px solid $borderColor;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+}
+.page .showNum .show-input .page-icon i {
+  display: block;
+  width: 20px;
+  height:17px;
+  cursor: pointer;
+}
+.page .showNum .show-input .page-icon i.icon-up {
+  border-bottom:1px solid $borderColor;
+}
+.page .showNum .show-input input{
+  width:64px;
+  height:34px;
+  border:1px solid $borderColor;
+  border-radius:5px;
+  padding:0 22px 0 10px;
+  color:#2E2E32;
+}
+.page .pageNum {
+  float: $sideR;
+  border:1px solid $borderColor;
+  border-radius:5px;
+}
+.pageNum li {
+  float: left;
+  padding: 7px 14px;
+  border-right:1px solid $borderColor;
+  height: 34px;
+}
+.pageNum li:last-child{
+  border-right:0;
+}
+.pageNum li a{
+  color:#4A4A4A;
+  font-size:14px;
+  display: block;
+}
+.pageNum li a:hover {
+  color:#4DA1FF;
+}
+.pageNum li .prev i{
+  @include fnIconSprite(prev);
+}
+.pageNum li .next i{
+  @include fnIconSprite(next);
+}
+.pageNum li i {
+  display: block;
+}
+.module-marking-filter .marking-type li,.marking-style  li,.marking-level li {
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 1px solid #CCD3DE;
+  float: $sideL;
+  margin-right: 15px;
+}
+.module-marking-filter ul a {
+  font-size: 12px;
+  color:#636363;
+}
+.module-marking-filter li:hover {
+  border:1px solid #4DA1FF;
+}
+.module-marking-filter li:hover a{
+  color:#4DA1FF;
+}
+.module-marking-filter li.active {
+  border:1px solid #4DA1FF;
+  background-color: #E0EEFD;
+}
+.module-marking-filter li.active a{
+  color:#4DA1FF;
+}
+.module-marking-filter ul:last-child {
+  border-right:0;
+}
+.module-marking-filter ul {
+  padding:15px 0;
+  border-right:1px solid $borderColor;
+}
+.module-marking-filter ul li:last-child{
+  margin-right: 0;
+}
+.module-marking-filter .marking-type {
+  float: $sideL;
+  width: 230px;
+}
+.module-marking-filter .marking-style {
+  float: $sideL;
+  width: 300px;
+  padding-left: 15px;
+}
+.module-marking-filter .marking-level {
+  float: $sideL;
+  padding-left: 15px;
+}
+.theme-list .theme-content{
+  clear: both;
+}
+.theme-list .theme-content {
+  padding: 30px 50px;
+  min-height: 90px;
+}
+.theme-list .theme-content p,.theme-list .theme-content span{
+  color:#4A4A4A;
+  font-size: 14px;
+  line-height: 1.5;
 }
 @media (min-width: 1400px) {
   .container {

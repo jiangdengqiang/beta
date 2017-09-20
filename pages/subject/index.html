@@ -111,60 +111,92 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 main-right">
-                <div class="module-marking">
-                    <ul class="marking-list">
-                        <li><a href="javascript:;">题目录入</a></li>
-                        <li><a href="javascript:;">批量审核</a></li>
-                        <li><a href="javascript:;">批量移动</a></li>
-                    </ul>
-                    <a href="javascript:;"><i class="icon-check"></i>显示打标及审核过的题目</a>
-                </div>
-                <div class="module-marking-filter">
-                    <div class="row">
-                        <ul class="marking-type col-md-3">
-                            <li><a href="javascript:;">选择<span class="marking-num">14</span></a></li>
+            <div class="col-md-8">
+                <div class="main-right">
+                    <div class="module-marking">
+                        <ul class="marking-list">
+                            <li><a href="javascript:;">题目录入</a></li>
+                            <li><a href="javascript:;">批量审核</a></li>
+                            <li><a href="javascript:;">批量移动</a></li>
+                        </ul>
+                        <a href="javascript:;" class="marking-check"><i class="icon-check"></i>显示打标及审核过的题目</a>
+                    </div>
+                    <div class="module-marking-filter">
+                        <ul class="marking-type">
+                            <li class="active"><a href="javascript:;">选择<span class="marking-num">14</span></a></li>
                             <li><a href="javascript:;">填空<span class="marking-num">6</span></a></li>
                             <li><a href="javascript:;">解答<span class="marking-num">6</span></a></li>
                         </ul>
-                        <ul class="marking-style col-md-5">
+                        <ul class="marking-style">
                             <li><a href="javascript:;">容易<span class="marking-num">14</span></a></li>
                             <li><a href="javascript:;">中等<span class="marking-num">6</span></a></li>
                             <li><a href="javascript:;">困难<span class="marking-num">6</span></a></li>
                             <li><a href="javascript:;">未知<span class="marking-num">6</span></a></li>
                         </ul>
-                        <ul class="marking-level col-md-4">
+                        <ul class="marking-level">
                             <li><a href="javascript:;">同步训练<span class="marking-num">14</span></a></li>
                             <li><a href="javascript:;">复习模拟<span class="marking-num">6</span></a></li>
                             <li><a href="javascript:;">高考真题<span class="marking-num">6</span></a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="module-theme">
-                    <div class="theme-list">
-                        <ul class="theme-tip">
-                            <li><span>1</span></li>
-                            <li><a href="javascript:;">编辑</a></li>
-                            <li><a href="javascript:;">浏览</a></li>
-                            <li><a href="javascript:;">删除</a></li>
+                    <div class="module-theme">
+                        <div class="theme-list">
+                            <ul class="theme-tip">
+                                <li><span class="theme-num">1</span></li>
+                                <li><a href="javascript:;">编辑</a></li>
+                                <li><a href="javascript:;">浏览</a></li>
+                                <li><a href="javascript:;">删除</a></li>
+                            </ul>
+                            <ul class="theme-status">
+                                <li><i></i><span>未审核</span></li>
+                                <li><i></i><span>未打标</span></li>
+                                <li><a href="#" class="ok">打标</a></li>
+                            </ul>
+                            <div class="theme-content">
+                               <span>这是个题目的字体样式</span>
+                            </div>
+                        </div>
+                        <div class="theme-list">
+                            <ul class="theme-tip">
+                                <li><span class="theme-num">2</span></li>
+                                <li class="hide"><a href="javascript:;">编辑</a></li>
+                                <li class="hide"><a href="javascript:;">浏览</a></li>
+                                <li class="hide"><a href="javascript:;">删除</a></li>
+                            </ul>
+                            <ul class="theme-status">
+                                <li><i></i><span>未审核</span></li>
+                                <li><i></i><span>未打标</span></li>
+                                <li><a href="#">打标</a></li>
+                            </ul>
+                            <div class="theme-content">
+                                <span>这是个题目的字体样式</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="result">
+                            当前结果:<span class="result-num">26</span>条记录
+                        </div>
+                        <div class="showNum">
+                            <span>每页显示</span>
+                            <div class="show-input">
+                                <input type="num" value="4"/>
+                                <span class="page-icon"><i class="icon-up"></i><i class="icon-down"></i></span>
+                            </div>
+                            <span>条</span>
+                        </div>
+                        <ul class="pageNum">
+                            <li><a href="javascript:;" class="first">首页</a></li>
+                            <li><a href="javascript:;" class="prev"><img src="../images/icon/prev.png"/></a></li>
+                            <li><a href="javascript:;">1</a></li>
+                            <li><a href="javascript:;">2</a></li>
+                            <li><a href="javascript:;" class="next"><img src="../images/icon/next.png"/></a></li>
+                            <li><a href="javascript:;" class="last">尾页</a></li>
                         </ul>
-                        <ul class="theme-status">
-                            <li><i></i><span>未审核</span></li>
-                            <li><i></i><span>未打标</span></li>
-                            <li><a href="#">打标</a></li>
-                        </ul>
-                        <p class="theme-content">
-                           <span>这是个题目的字体样式</span>
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-right"></div>
-    </section>
-    <!--分页-->
-    <section class="page">
-
     </section>
 </body>
 {% include "../templates/partials/js.html" %}
