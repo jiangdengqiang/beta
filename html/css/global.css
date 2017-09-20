@@ -85,7 +85,7 @@ i { display: inline-block; }
 
 .module-accordion { margin-top: 15px; }
 
-.module-accordion .icon-folder { width: 21px; height: 18px; background-image: url('../images/sprite-icon.png'); background-position: 0 -37px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
+.module-accordion .icon-folder { width: 21px; height: 18px; background-image: url('../images/sprite-icon.png'); background-position: 0 -38px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
 }*/ vertical-align: text-bottom; }
 
 .module-accordion .module-list { border: #CCD3DE solid 1px; border-radius: 5px; border-bottom: 0; }
@@ -108,12 +108,12 @@ i { display: inline-block; }
 
 .module-accordion .module-list .module-list-two li:hover { background-color: #E1E6F0; }
 
-.module-accordion i.icon-file { width: 14px; height: 17px; background-image: url('../images/sprite-icon.png'); background-position: -16px 0; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
+.module-accordion i.icon-file { width: 14px; height: 17px; background-image: url('../images/sprite-icon.png'); background-position: -16px -21px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
 }*/ vertical-align: text-bottom; }
 
 .module-accordion .module-list-two span { display: inline-block; }
 
-.module-accordion .module-list.open .icon-folder { width: 21px; height: 19px; background-image: url('../images/sprite-icon.png'); background-position: 0 -55px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
+.module-accordion .module-list.open .icon-folder { width: 21px; height: 19px; background-image: url('../images/sprite-icon.png'); background-position: 0 -56px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
 }*/ }
 
 .bootstrap-select.btn-group .dropdown-toggle .caret { right: 15px; margin-top: -5px; }
@@ -121,6 +121,10 @@ i { display: inline-block; }
 .form-select .btn.btn-default { outline: 0 !important; box-shadow: none; }
 
 .main-right { background-color: #fff; border: #CCD3DE solid 1px; padding: 15px; border-radius: 5px; min-height: 808px; position: relative; }
+
+.main-right .empty { position: absolute; top: 50%; left: 50%; margin-left: -100px; margin-top: -70px; }
+
+.main-right .empty p { font-size: 14px; color: #59A6F8; margin-top: 22px; text-align: center; }
 
 .marking-list { float: left; }
 
@@ -132,7 +136,7 @@ i { display: inline-block; }
 
 .module-marking .marking-check { float: left; margin-left: 16px; margin-top: 15px; color: #636363; font-size: 12px; }
 
-.icon-check { width: 16px; height: 16px; background-image: url('../images/sprite-icon.png'); background-position: 0 0; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
+.icon-check { width: 16px; height: 16px; background-image: url('../images/sprite-icon.png'); background-position: 0 -21px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
 }*/ vertical-align: text-bottom; margin-right: 3px; }
 
 .module-marking-filter { border: #CCD3DE solid 1px; border-radius: 5px; padding: 0 15px; margin-bottom: 15px; }
@@ -179,9 +183,17 @@ i { display: inline-block; }
 
 .page .showNum .show-input .page-icon { position: absolute; right: 0; top: 0; border-left: 1px solid #CCD3DE; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
 
-.page .showNum .show-input .page-icon i { display: block; width: 20px; height: 17px; cursor: pointer; }
+.page .showNum .show-input .page-icon > span { display: block; width: 20px; height: 17px; cursor: pointer; position: relative; }
 
-.page .showNum .show-input .page-icon i.icon-up { border-bottom: 1px solid #CCD3DE; }
+.page-icon i { position: absolute; top: 50%; margin-top: -2px; left: 50%; margin-left: -3px; }
+
+.icon-up { width: 6px; height: 4px; background-image: url('../images/sprite-icon.png'); background-position: 0 -11px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
+}*/ display: inline-block; }
+
+.icon-down { width: 6px; height: 4px; background-image: url('../images/sprite-icon.png'); background-position: -6px -11px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
+}*/ display: inline-block; }
+
+.borderB { border-bottom: 1px solid #CCD3DE; }
 
 .page .showNum .show-input input { width: 64px; height: 34px; border: 1px solid #CCD3DE; border-radius: 5px; padding: 0 22px 0 10px; color: #2E2E32; }
 
@@ -195,10 +207,10 @@ i { display: inline-block; }
 
 .pageNum li a:hover { color: #4DA1FF; }
 
-.pageNum li .prev i { width: 10px; height: 10px; background-image: url('../images/sprite-icon.png'); background-position: -21px -55px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
+.pageNum li .prev i { width: 10px; height: 10px; background-image: url('../images/sprite-icon.png'); background-position: 0 0; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
 }*/ }
 
-.pageNum li .next i { width: 10px; height: 10px; background-image: url('../images/sprite-icon.png'); background-position: -21px -37px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
+.pageNum li .next i { width: 10px; height: 10px; background-image: url('../images/sprite-icon.png'); background-position: -12px -11px; background-repeat: no-repeat; /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (max-width: 767px) { background-image: sprite-url($icons-2x); background-size: (image-width(sprite-path($icons-2x))/2) (image-height(sprite-path($icons-2x))/2); background-position: round(nth(sprite-position($icons-2x, $name), 1)/ 2) round(nth(sprite-position($icons-2x, $name), 2)/ 2); height: image-height(sprite-file($icons-2x, $name))/2; width: image-width(sprite-file($icons-2x, $name))/2;
 }*/ }
 
 .pageNum li i { display: block; }

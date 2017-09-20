@@ -272,6 +272,19 @@ i{
   min-height: 808px;
   position: relative;
 }
+.main-right .empty{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -70px;
+}
+.main-right .empty p {
+  font-size: 14px;
+  color:#59A6F8;
+  margin-top: 22px;
+  text-align: center;
+}
 .marking-list {
   float: $sideL;
 }
@@ -432,13 +445,29 @@ i{
   border-top-left-radius:5px;
   border-bottom-left-radius:5px;
 }
-.page .showNum .show-input .page-icon i {
+.page .showNum .show-input .page-icon > span {
   display: block;
   width: 20px;
   height:17px;
   cursor: pointer;
+  position: relative;
 }
-.page .showNum .show-input .page-icon i.icon-up {
+.page-icon i {
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 50%;
+  margin-left: -3px;
+}
+.icon-up {
+  @include fnIconSprite(icon_up);
+  display: inline-block;
+}
+.icon-down {
+  @include fnIconSprite(icon_down);
+  display: inline-block;
+}
+.borderB {
   border-bottom:1px solid $borderColor;
 }
 .page .showNum .show-input input{
