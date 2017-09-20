@@ -17,8 +17,14 @@
                     }
                 })
             })
+        },
+        deleteMethod:function(){
+            $(".btn-delete").click(function(){
+
+            })
         }
     }
     method.selecterUI();
     method.accordion();
+    method.deleteMethod();
 })
